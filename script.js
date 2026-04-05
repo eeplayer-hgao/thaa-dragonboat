@@ -4,7 +4,7 @@
 const apiUrl        = 'https://script.google.com/macros/s/AKfycbyLYPNnQbwUg7YPpJJgXG3Th2jFP2ocB_5Gekbe8aYEVwNSFls7cYEihC9jEk1_9trT/exec';
 //const maxSlots      = 40;
 const trainingQuota = 4;
-const eventLocation = 'Fort Point Pier, 21 Wormwood St #215, Boston, MA 02210';
+const eventLocation = 'Eli Lily, 15 Necco St, Boston, MA 02210';
 
 // Two sessions’ dates & times:
 const sessions = [
