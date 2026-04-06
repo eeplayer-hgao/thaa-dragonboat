@@ -64,11 +64,11 @@ async function signUpSession(session) {
 
   const name = nameEl.value.trim();
   const hand = handEl.value;
-
+/*
   if (!name || !hand || !waiverEl.checked) {
     return alert('Please fill in name, hand, and confirm waiver.');
   }
-
+*/
   // Prevent duplicates on this device
   let myList = getMySignups(date);
   if (myList.includes(name)) {
