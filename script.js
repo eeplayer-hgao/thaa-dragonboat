@@ -56,7 +56,7 @@ async function signUpSession(session) {
 
   const nameEl   = document.getElementById(`name${key}`);
   const handEl   = document.getElementById(`hand${key}`);
-  const waiverEl = document.getElementById(`waiverCheck${key}`);
+  //const waiverEl = document.getElementById(`waiverCheck${key}`);
   // only look for training checkbox if enabled
   const training = session.trainingEnabled
     ? (document.getElementById(`training${key}`).checked ? 'Yes' : 'No')
@@ -196,7 +196,8 @@ function validateInputs(key) {
   const session = sessions.find(s=>s.key===key);
   const name  = document.getElementById(`name${key}`).value.trim();
   const hand  = document.getElementById(`hand${key}`).value;
-  const waiver= document.getElementById(`waiverCheck${key}`).checked;
+  const waiver= "NoWaiver";
+  //const waiver= document.getElementById(`waiverCheck${key}`).checked;
   // if training is enabled we do *not* require it to validate here
   const btn   = document.getElementById(`signUpBtn${key}`);
   const ok    = name!=='' && hand!=='' && waiver;
@@ -213,13 +214,15 @@ window.onload = () => {
     document.getElementById(`signUpBtn${s.key}`)
       .addEventListener('click', ()=> signUpSession(s));
     // hook up validation
-    ['name','hand','waiverCheck'].forEach(id=>{
+    ['name','hand'].forEach(id=>{
       const el = document.getElementById(id+s.key);
       const evt= id==='hand'?'change':'input';
       el.addEventListener(evt, ()=> validateInputs(s.key));
+/*
       if(id==='waiverCheck'){
         el.addEventListener('change', ()=> validateInputs(s.key));
       }
+*/
     });
   });
 };
