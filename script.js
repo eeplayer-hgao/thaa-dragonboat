@@ -4,12 +4,12 @@
 const apiUrl        = 'https://script.google.com/macros/s/AKfycbyLYPNnQbwUg7YPpJJgXG3Th2jFP2ocB_5Gekbe8aYEVwNSFls7cYEihC9jEk1_9trT/exec';
 //const maxSlots      = 40;
 const trainingQuota = 4;
-const eventLocation = 'Eli Lily, 15 Necco St, Boston, MA 02210';
+const eventLocation = 'MIT Boathouse: 409 Memorial Dr, Cambridge, MA 02139';
 
 // Two sessions’ dates & times:
 const sessions = [
-  { key: '1', date: '20260412', time: '3:00-5:00pm', title: 'Sunday Session', maxSlots: 100, trainingEnabled: false, location: 'Eli Lily, 15 Necco St, Boston, MA 02210' }//,
-  //{ key: '2', date: '20250605', time: '6:00-8:00pm', title: 'Thursday Session', trainingEnabled: true, location: 'Fort Point Pier, 21 Wormwood St #215, Boston, MA 02210' }//,
+  { key: '1', date: '20260526', time: '6:00-7:00pm', title: 'Tuesday Session', maxSlots: 22, trainingEnabled: false, location: '409 Memorial Dr, Cambridge, MA 02139'},
+  { key: '2', date: '20260526', time: '7:00-8:00pm', title: 'Tuesday Session', maxSlots: 22, trainingEnabled: false, location: '409 Memorial Dr, Cambridge, MA 02139'},
   //{ key: '2', date: '20250928', time: '3:00-5:00pm', title: 'Sunday Session', maxSlots: 40, trainingEnabled: true, location: 'The Barking Crab, 88 Sleeper St, Boston, MA 02210' }//,
   //{ key: '4', date: '20250522', time: '6:00-8:00pm', title: 'Thursday Session', trainingEnabled: false, location: 'MIT Richard J. Resch Boathouse, 409 Memorial Dr, Cambridge, MA 02139' }
 ];
